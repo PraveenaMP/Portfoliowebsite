@@ -40,7 +40,7 @@
        <textarea placeholder="message" id="message" cols="20" rows="10"></textarea><br><br>
 
        <button type="submit">Submit</button>
-       <button onclick="func()">Back</button>
+       <button type="button">Back</button>
     </form>
      
     <script>
@@ -55,9 +55,9 @@
             localStorage.setItem('message',message);
         })
 
-        function func() {
+        form.addEventListener(`button`,()=>{
             location.href("./index.html")
-        }
+        })
     </script>
 </div>
 </body>
