@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form{
+            padding: 0%;
+            margin: 0%;
+            background-color: rgb(248, 206, 128);
+            text-align: center;
+        }
+        h1{
+            font-style: italic;
+            font-size: larger;
+            color: rgb(114, 78, 11);
+        }
+        button{
+            display: inline-flex;
+            justify-content: space-between;
+            color: aliceblue;
+            padding: 2px 6px;
+           background-color:  rgb(114, 78, 11);
+           border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <h1>Contact me</h1>
+    <form>
+        <label for="name">Your Name:</label>
+       <input type="text" placeholder="name" id="name"><br><br>
+
+       <label for="email">Your Email Id:</label>
+       <input type="email" placeholder="email" id="email"><br><br>
+
+       <label for="message">Your Message:</label>
+       <textarea placeholder="message" id="message" cols="20" rows="10"></textarea><br><br>
+
+       <button type="submit">Submit</button>
+        <button onclick="func()">Back</button>
+    </form>
+     
+    <script>
+        let form= document.forms[0]
+
+        form.addEventListener(`submit`,()=>{
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let message = document.getElementById('message').value;
+
+            localStorage.setItem('name',name);
+            localStorage.setItem('message',message);
+        })
+
+        function func() {
+            location.replace("./<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form{
+            padding: 0%;
+            margin: 0%;
+            background-color: rgb(248, 206, 128);
+            text-align: center;
+        }
+        h1{
+            font-style: italic;
+            font-size: larger;
+            color: rgb(114, 78, 11);
+        }
+        button{
+            display: inline-flex;
+            justify-content: space-between;
+            color: aliceblue;
+            padding: 2px 6px;
+           background-color:  rgb(114, 78, 11);
+           border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <h1>Contact me</h1>
+    <form>
+        <label for="name">Your Name:</label>
+       <input type="text" placeholder="name" id="name"><br><br>
+
+       <label for="email">Your Email Id:</label>
+       <input type="email" placeholder="email" id="email"><br><br>
+
+       <label for="message">Your Message:</label>
+       <textarea placeholder="message" id="message" cols="20" rows="10"></textarea><br><br>
+
+       <button type="submit">Submit</button>
+        <button onclick="func()">Back</button>
+    </form>
+     
+    <script>
+        let form= document.forms[0]
+
+        form.addEventListener(`submit`,()=>{
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let message = document.getElementById('message').value;
+
+            localStorage.setItem('name',name);
+            localStorage.setItem('message',message);
+        })
+
+        function func() {
+            location.replace("./project.html")
+        }
+    </script>
+</div>
+</body>
+</html>")
+        }
+    </script>
+</div>
+</body>
+</html>
