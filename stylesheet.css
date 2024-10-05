@@ -1,0 +1,121 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    overflow-x: hidden;
+    height: 100vh;
+}
+.img{
+    position: relative;
+    bottom: 150px;
+    z-index: -1;
+}
+.img1{
+    position: relative;
+    bottom:300px;
+    left: 250px;
+}
+.img2{
+    position: relative;
+    bottom:280px;
+    left: 550px;
+}
+.img3{
+    position: relative;
+    bottom:400px;
+    left: 550px;
+}
+.img4{
+    height:130px ;
+    width:110px ;
+    position: relative;
+    bottom: 150px;
+    right: 250px;
+    border-radius: 100%;
+}
+.hi{
+    font-style: italic;
+    font-size: 25px;
+    font-weight: bolder;
+    position: relative;
+    left: 600px;
+    top: 10px;
+}
+.body_sec{
+    position: relative;
+    bottom: 270px;
+    left: 20px;
+    padding: 0%;
+    margin: 0%;
+}
+#info{
+    height: 30px;
+    width: 100px;
+    background-color: rgb(209, 209, 16);
+    border-radius: 20px;
+    position: relative;
+    bottom: 780px;
+    left: 400px;
+}
+#bio{
+    position: relative;
+    bottom: 400px;
+    left: 600px;
+}
+#popupcontent {
+    display: none;
+    position: fixed;
+    top: 300px;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #e5e5b2;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+ul{
+    list-style: none;
+}
+.header1{
+    font-style: italic;
+    font-size: medium;
+    font-weight: bold;
+}
+.btn{
+    background-color: blue;
+    border-radius: 20px;
+    color: #fff;
+}
+.para{
+    position: relative;
+    top: 500px;
+    left: 300px;
+    font-size: larger;
+}
+#skills{
+    position: relative;
+    bottom: 300px;
+    display: flex;
+    padding: 0%;
+    margin: 0%;
+    justify-content: space-around;
+    animation: skills 4s linear infinite;
+}
+@keyframes skills {
+    0% {
+        transform: scale(.9);
+        opacity: 0;
+    }
+    20% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    80% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+}
