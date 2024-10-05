@@ -40,7 +40,7 @@
        <textarea placeholder="message" id="message" cols="20" rows="10"></textarea><br><br>
 
        <button type="submit">Submit</button>
-        <a href="./index.html"><button>Back</button></a>
+       <button onclick="func()">Back</button>
     </form>
      
     <script>
@@ -54,6 +54,10 @@
             localStorage.setItem('name',name);
             localStorage.setItem('message',message);
         })
+
+        function func() {
+            location.replace("./index.html")
+        }
     </script>
 </div>
 </body>
