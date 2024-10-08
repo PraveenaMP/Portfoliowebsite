@@ -118,4 +118,32 @@ ul{
         transform: translateY(100px);
         opacity: 0;
     }
+};
+
+#skills1{
+    position: relative;
+    bottom: 300px;
+    display: flex;
+    padding: 0%;
+    margin: 0%;
+    justify-content: space-around;
+    animation: skills 4s linear infinite;
+}
+@keyframes skills1{
+    0% {
+        transform: scale(.9);
+        opacity: 0;
+    }
+    20% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    80% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
 }
